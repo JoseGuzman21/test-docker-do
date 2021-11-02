@@ -16,7 +16,7 @@ app.use(function (req, res, next) {
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function (req, res) {
-    res.json({ message: 'Welcome the first container, doing test docker, hi from docker compose' });
+    res.json({ message: 'Heyyyyy, hi from backend' });
 });
 
 app.listen(3000, () => console.log(`Server running on port ${3000}`));
