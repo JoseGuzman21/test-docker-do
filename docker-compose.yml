@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  expressapp:
+    # container_name: expressapp
+    # build: 
+    image: node:12-alpine
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+    command: sh -c "npm install && node src/index.js"
